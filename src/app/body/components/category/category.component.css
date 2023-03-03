@@ -1,0 +1,17 @@
+.body-container-content {
+  display: flex;
+  background: rgb(236, 235, 235);
+  border-radius: 6.4px;
+}
+.body-container-content-left {
+  flex: 1;
+}
+.body-container-content-right {
+  flex: 2;
+  background: rgb(236, 235, 235);
+}
+.form {
+  padding: 20px;
+  width: 80%;
+}
+

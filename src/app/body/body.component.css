@@ -1,0 +1,6 @@
+.body-container {
+  min-height: calc(100vh - 60px);
+  background: rgb(250, 249, 249);
+  padding: 10px 112px;
+  border-radius: 6.4px;
+}

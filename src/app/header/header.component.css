@@ -1,0 +1,30 @@
+.header-nav {
+  height: 60px;
+  width: 100%;
+  background: red;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+.list-nav {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+.nav-item {
+  cursor: pointer;
+  margin-right: 8px;
+  /* border-radius: 6.4px;
+  border: 2px solid white; */
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+.nav-item:hover {
+
+}
