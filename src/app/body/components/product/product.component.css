@@ -1,0 +1,14 @@
+.product-container{
+  background: rgb(242, 241, 241);
+  display: flex;
+}
+.product-content_left{
+  flex: 2;
+  background: rgb(66, 60, 60);
+  height: 30px;
+}
+.product-content_right{
+  flex: 5;
+  background: red;
+  height: 40px;
+}

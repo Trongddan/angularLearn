@@ -13,6 +13,8 @@ import { HomeComponent } from './body/components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastService, AngularToastifyModule } from 'angular-toastify';
 import { DialogModule } from 'primeng/dialog';
+import { ProductComponent } from './body/components/product/product.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { DialogModule } from 'primeng/dialog';
     BodyComponent,
     CategoryComponent,
     HomeComponent,
+    ProductComponent,
+
 
   ],
   imports: [

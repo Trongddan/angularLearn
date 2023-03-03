@@ -51,8 +51,8 @@ export class CategoryComponent {
       }
     );
   }
-  deleteCate(id: string) {
-    this.cateService.deleteCate(id).subscribe(
+  deleteCate() {
+    this.cateService.deleteCate(this.idIsUpdated).subscribe(
       (res) => {
         console.log(res);
         this.getCategory();
@@ -61,19 +61,36 @@ export class CategoryComponent {
       },
       (err) => console.log(err)
     );
+    this.idIsUpdated=''
   }
   ngOnInit() {
     this.getCategory();
   }
+  
   display: boolean = false;
 
-  showDialog() {
+  showDialog(id:string) {
     this.display = true;
+    this.idIsUpdated=id
   }
   handleUpdateCate(item: cateObj) {
     this.idIsUpdated = item._id;
     this.isUpdate = true;
     this.name = item.name;
     this.description = item.description;
+  }
+  backFromUpdate() {
+    this.isUpdate = false;
+    this.idIsUpdated = '';
+    (this.name = ''), (this.description = '');
+  }
+  handleDoUpdate(name: string, description: string) {
+    this.cateService.updateCate(this.idIsUpdated, name, description).subscribe(
+      (res) => {
+        this.getCategory()
+        this.addInfoToast('Cập nhật thành công', 'success');
+      },
+      (err) => console.log(err)
+    );
   }
 }

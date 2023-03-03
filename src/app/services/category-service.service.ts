@@ -18,4 +18,8 @@ export class CategoryServiceService {
     return this.http.delete(router.deleteCategory + id) as Observable<any>;
     // console.log(router.deleteCategory + id);
   }
+  updateCate(id:string, name: string, description: string){
+    const body = { name, description };
+    return this.http.put(router.updateCategory+id, body);
+  }
 }
