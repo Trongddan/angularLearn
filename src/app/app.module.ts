@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastService, AngularToastifyModule } from 'angular-toastify';
 import { DialogModule } from 'primeng/dialog';
 import { ProductComponent } from './body/components/product/product.component';
+import {DropdownModule} from 'primeng/dropdown';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -24,10 +26,9 @@ import { ProductComponent } from './body/components/product/product.component';
     CategoryComponent,
     HomeComponent,
     ProductComponent,
-
-
   ],
   imports: [
+    FontAwesomeModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -37,6 +38,7 @@ import { ProductComponent } from './body/components/product/product.component';
     HttpClientModule,
     AngularToastifyModule,
     DialogModule,
+    DropdownModule
   ],
   providers: [ToastService],
   bootstrap: [AppComponent],

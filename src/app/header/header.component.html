@@ -1,10 +1,20 @@
 <div class="header-nav">
-  <ul class="list-nav">
-    <li routerLink="/" routerLinkActive="true" class="nav-item">Trang chủ</li>
-    <li routerLink="/category" class="nav-item">Danh mục</li>
-    <li routerLink="/product" class="nav-item">Thương hiệu</li>
-    <li routerLink="/product" class="nav-item">Sản phẩm</li>
-    <li routerLink="/product" class="nav-item">Bài viết</li>
-    <li routerLink="/product" class="nav-item">Liên hệ</li>
-  </ul>
+  <div class="header container">
+    <div class="logoImg">
+      <img class="logo_icon" [src]="imgLogoUrl" alt="" />
+    </div>
+    <ul class="list-nav">
+      <li routerLink="/" routerLinkActive="true" class="nav-item">Trang chủ</li>
+      <li routerLink="/category" class="nav-item">Danh mục</li>
+      <li routerLink="/product" class="nav-item">Thương hiệu</li>
+      <li routerLink="/product" class="nav-item">Sản phẩm</li>
+      <li routerLink="/product" class="nav-item">Bài viết</li>
+      <li routerLink="/product" class="nav-item">Liên hệ</li>
+    </ul>
+    <ul class="list-account-group">
+      <li class="nav-item"><fa-icon [icon]="serchIcon"></fa-icon></li>
+      <li class="nav-item"><fa-icon [icon]="UserIcon"></fa-icon></li>
+      <li class="nav-item"><fa-icon [icon]="bagIcon"></fa-icon></li>
+    </ul>
+  </div>
 </div>
