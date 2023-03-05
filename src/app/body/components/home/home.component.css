@@ -1,0 +1,40 @@
+.sologan{
+  height: 200px;
+  background-image: url('../../../../assets/bannerSologan.jpg');
+
+}
+.slogan-wrapp{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+.slogan-item{
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  color: white;
+
+}
+.slogan-item-icon{
+  color: white;
+  font-size: 43px;
+  margin-right: 15px;
+}
+.slogan-item-des{
+}
+.slogan-item-des p{
+    text-overflow: ellipsis;
+    font-family: "Roboto", sans-serif;
+}
+.slogan-item-des-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.slogan-item-des-content{
+  font-size: 14px;
+  font-weight: 50 ;
+  opacity: .5;
+}

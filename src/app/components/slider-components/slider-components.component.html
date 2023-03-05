@@ -1,0 +1,13 @@
+<p-carousel
+  [value]="listSlider"
+  [numVisible]="1"
+  [numScroll]="1"
+  [circular]="true"
+  [indicatorStyleClass]="'alo'"
+  swipe="true"
+  [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions"
+  [showNavigators]="false" >
+  <ng-template let-sliders pTemplate="item"
+    ><img loading="lazy" class="imgSlide" [src]="sliders" alt=""
+  /></ng-template>
+</p-carousel>

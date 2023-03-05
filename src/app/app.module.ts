@@ -16,6 +16,9 @@ import { DialogModule } from 'primeng/dialog';
 import { ProductComponent } from './body/components/product/product.component';
 import {DropdownModule} from 'primeng/dropdown';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {CarouselModule} from 'primeng/carousel';
+import { SliderComponentsComponent } from './components/slider-components/slider-components.component';
+import { GroupProductComponent } from './components/group-product/group-product.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CategoryComponent,
     HomeComponent,
     ProductComponent,
+    SliderComponentsComponent,
+    GroupProductComponent,
+
   ],
   imports: [
     FontAwesomeModule,
@@ -38,7 +44,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     AngularToastifyModule,
     DialogModule,
-    DropdownModule
+    DropdownModule,
+    CarouselModule
   ],
   providers: [ToastService],
   bootstrap: [AppComponent],

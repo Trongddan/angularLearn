@@ -1,0 +1,66 @@
+.title-group {
+  display: flex;
+  justify-content: center;
+}
+.title-group-content {
+  color: #3c3451;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 25px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+  font-family: "Roboto Slab", serif;
+}
+.list-product {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2%;
+  font-size: 13px;
+}
+.product-item {
+  width: 23.5%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.product-img-wrap{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.product-item:hover img {
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+.product-item > img {
+  width: 100%;
+  object-fit: cover;
+}
+.product-item-des {
+  font-size: 0.65em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-item-name {
+  font-size: 0.9em;
+  margin-bottom: 2px !important;
+  width: 90%;
+  text-align: center;
+  margin-left: 5% !important;
+}
+.product-item-price {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.product-item-name:hover {
+  color: #e2ba48;
+}

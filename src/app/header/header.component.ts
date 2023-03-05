@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {
   faMagnifyingGlass,
   faBagShopping,
@@ -14,4 +14,7 @@ export class HeaderComponent {
   serchIcon = faMagnifyingGlass;
   bagIcon = faBagShopping;
   UserIcon = faUser;
+
+
 }
+
